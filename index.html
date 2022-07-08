@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 브라우저 초기화 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"> 
+
+  <!-- 나눔고딕 폰트 설정 -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- 아이콘 설정 -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- GSAP 애니메이션 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- 슬라이드 SWIPER -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+  <link rel="stylesheet" href="./main.css">
+  <script defer src="./youtube.js"></script>
+  <script defer src="./main.js"></script>
+
+  <title>Self Introduction</title>
+</head>
+<body>
+  
+  <!-- HEADER -->
+  <header>
+    <div class="inner">
+
+      <div class="sub-menu">
+        <ul class="menu">
+          <li>
+            <div class="material-icons">school</div>
+            <a href="javascript:void(0)">Education</a>
+          </li>
+          <li>
+            <div class="material-icons">developer_board</div>
+            <a href="javascript:void(0)">Skills</a>
+          </li>
+          <li>
+            <div class="material-icons">work</div>
+            <a href="javascript:void(0)">Work Experience</a>
+          </li>
+          <li>
+            <div class="material-icons">view_quilt</div>
+            <a href="javascript:void(0)">Project</a>
+          </li>        
+        </ul>
+      </div>
+
+      <div class="main-menu">
+        <ul class="contents">
+          <li>
+            <a href="#goal">앞으로의 목표</a>
+          </li>
+          <li>
+            <a href="#feild">관심 분야</a>
+          </li>
+          <li>
+            <a href="#favorite">좋아하는 것</a>
+          </li>
+          <li>
+            <a href="#fighting">동료 레이서에게 하고 싶은 말</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- MY GOAL -->
+  <section class="goal">
+    <div id="goal" class="goal__cover"></div>
+    <div class="title">
+      <h2 class="fade-in">앞으로의 목표</h2>
+    </div>
+    <ul class="plan">
+      <li class="fade-in">2022년 10월 - 사업계획 수립</li>
+      <li class="fade-in">2022년 12월 - MVP 개발/검증</li>
+      <li class="fade-in">2023년 01월 - 창업지원 대상 선정</li>
+    </ul>
+  </section>
+
+  <!-- INTEREST -->
+  <section class="interest">
+    <h2 id="field">관심 분야</h2>
+
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./images/deep-learning-icon.png" width="200px" alt="딥러닝" class="deep-learing">
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/opensource_logo.png" width="350px" alt="오픈소스">
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/React.jpeg" width="300px" alt="리액트">
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/learning_locker_logo.png" width="200" alt="LRS">
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/h5p.png" width="180px" alt="H5P">
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/node.jpg" width="200px" alt="Node.js">
+        </div>
+      </div>
+    </div>
+    
+  </section>
+
+  <!-- LIKING -->
+  <section class="liking">
+    <h2 id="favorite">좋아하는 것</h2>
+    <img src="./images/hiking.jpg" alt="등산" class="picture1">
+    <img src="./images/pepsi.jpg" width="300px" alt="아이유한정펩시" class="picture2">
+    <img src="./images/hwasan.jpg" width="200px" alt="무협웹툰" class="picture3">
+
+  </section>
+
+  <!-- YOUTUBE VIDEO -->
+  <section class="youtube">
+
+    <div class="youtube__area">
+      <div id="player"></div>
+    </div>
+    <div class="youtube__cover"></div>
+   
+    <!-- PERSONAL INFO -->
+    <div class="inner">
+
+      <div id="fighting" class="infomation">
+        <div class="front">AI 5기 레이서분들,<br>모두들 끝까지<br>완주해서<br> 원하는 바를 이룹시다.<br>화이팅!!</div>
+        <img src="./images/speech.jpg" alt="/" class="back">
+      </div>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <section class="footer">
+    <span>엘리스 아카데미 AI트랙 5기</span>
+    <span>E-Mail : valuemore@naver.com</span>
+    <span>TEL : 010-6723-4401</span>
+    <span>제작 : 김종훈</span>
+
+    <p class="comment">
+      </span> HTML / CSS / 자바스크립트 연습용 페이지입니다.</p>
+  </section>
+
+ 
+</body>
+</html>

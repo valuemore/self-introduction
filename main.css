@@ -1,0 +1,277 @@
+/* COMMON */
+body {
+  color: #333;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* HEADER */
+header {
+  width: 100%;
+  background-color: #f6f6f0;
+  border-bottom: 1px solid #c8c8c8;
+}
+header .inner {
+  height: 120px;
+}
+header .sub-menu {
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+header .sub-menu ul.menu {
+  display: flex;
+}
+header .sub-menu ul.menu li {
+  position: relative;
+}
+header .sub-menu ul.menu li .material-icons {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 24px;
+}
+
+header .sub-menu ul.menu li a {
+  display: block;
+  padding: 11px 30px;
+  color: #656565;
+}
+header .sub-menu ul.menu li a:hover,
+header .sub-menu ul.menu li .material-icons:hover {
+  color: blue;
+}
+
+header .main-menu {
+  position: absolute;
+  top: 60px;
+  right: 0;
+
+}
+header .main-menu ul.contents {
+  display: flex;
+}
+
+header .main-menu ul.contents li a {
+  display: block;
+  padding: 15px 20px 40px 20px;
+  font-weight: 700;
+  color:#333;
+  font-size: 20px; 
+}
+header .main-menu ul.contents li a:hover {
+  background-color: #333;
+  color: white;
+}
+
+/* GOAL */
+.goal {
+  background-image: url("./images/startup.jpg");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 600px;
+  position: relative;
+}
+.goal .goal__cover {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.goal .title {
+  position: absolute;
+  right: 0;
+  top: 250px;
+}
+.goal h2 {
+  font-size: 40px;
+  font-weight: 700;
+  padding: 15px;
+  color: black;
+  opacity: 0;
+}
+.goal .plan {
+  position: absolute;
+  text-align: right;
+  right: 0;
+  bottom: 100px;
+}
+.goal li {
+  padding: 10px 20px;
+  font-size: 20px;
+  opacity: 0;
+}
+.goal h2:hover, .goal li:hover {
+  color: white;
+}
+
+/* INTERREST */
+.interest {
+  padding: 30px;
+}
+.interest h2 {
+  padding: 10px;
+  font-size: 40px;
+  font-weight: 700;
+}
+.interest .swiper .img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+/* LIKING */
+.liking {
+  background-image: url("./images/grand.JPG");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 800px;
+  position: relative;
+}
+.liking h2 {
+  position: absolute;
+  right: 0;
+  padding: 10px;
+  font-size: 40px;
+  font-weight: 700;
+}
+.liking h2:hover {
+  color: white;
+}
+.liking .picture1,
+.liking .picture2,
+.liking .picture3 {
+  border-radius: 50%;
+  box-shadow: 2px 2px 8px rgba(0,0,0,.5);
+}
+.liking .picture1 {
+  position: absolute;
+  top: 30%;
+  left: 50px;
+}
+.liking .picture2 {
+  position: absolute;
+  top: 50px;
+  right: 20%;
+}
+.liking .picture3 {
+  position: absolute;
+  bottom: 10%;
+  right: 30%;
+}
+
+
+/* YOUTUBE VIDEO */
+.youtube {
+  position: relative;
+  height: 700px;
+  background-color: #333;
+  overflow: hidden;
+}
+.youtube .youtube__area {
+  width: 1920px;
+  /* background-color: red; */
+  position: absolute;
+  left: 50%;
+  margin-left: calc(1920px / -2);
+  top: 50%;
+  margin-top: calc(1920px * 9 / 16 / -2);
+}
+.youtube .youtube__area::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+}
+.youtube .youtube__cover {
+  background-image: url(./images/video_cover_pattern.png);
+  background-color: rgba(0,0,0,.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#player {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left:0;
+}
+
+/* MY PROFILE */
+.youtube .inner {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+.youtube .infomation {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  perspective: 600px;
+}
+.youtube .infomation .front {
+  width: 300px;
+  height: 300px;
+  color: #333;
+  font-size: 30px;
+  text-align: center;
+  line-height: 2;
+  background-color: #c8c8c8;
+  opacity: .7;  
+  padding: 20px;
+  border-radius: 45px;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: 1s; ;
+  transform: rotateY(0deg);
+}
+.youtube .infomation:hover .front {
+  transform: rotateY(-180deg);
+}
+.youtube .infomation .back {
+  width: 300px;
+  height: 300px;
+  border-radius: 90px;
+  position: absolute;
+  padding: 20px;
+  backface-visibility: hidden;
+  transition: 1s; 
+  transform: rotateY(-180deg)
+}
+.youtube .infomation:hover .back {
+  transform: rotateY(0deg)
+}
+.footer {
+  margin-top: 30px;
+  text-align: center;
+}
+.footer span{
+  margin-right: 30px;
+  color: #999;
+}
+.footer .comment {
+  color: #999;
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 30px;
+}
